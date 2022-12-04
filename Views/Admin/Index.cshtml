@@ -1,0 +1,27 @@
+﻿@using EFSkills_CodeFirst.Models.Class;
+@model List<Yetenek>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNavbar.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>YETENEK</th>
+        <th>DEĞER</th>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Aciklama</td>
+            <td>@x.Deger</td>
+        </tr>
+    }
+
+
+</table>
+

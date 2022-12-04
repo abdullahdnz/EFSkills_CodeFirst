@@ -1,0 +1,21 @@
+﻿@model EFSkills_CodeFirst.Models.Class.Yetenek
+
+@{
+    ViewBag.Title = "YeniYetenek";
+    Layout = "~/Views/Shared/_LayoutNavbar.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div style="margin-bottom:20px">
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    </div>
+    <div style="margin-bottom:20px">
+        <label>Değer</label>
+        @Html.TextBoxFor(x => x.Deger, new { @class = "form-control" })
+    </div>
+    <div>
+        <button class="btn btn-primary">Ekle</button>
+    </div>
+</form>
+
